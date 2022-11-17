@@ -138,10 +138,17 @@ minetest.register_craft({
 })
 minetest.register_craft({
     type = "shaped",
-    output = "goo:shovel",
+    output = "goo:sword",
     recipe = {
         {"goo:goo"},
         {"goo:goo"},
         {"group:stick"}
+    }
+})
+minetest.register_craft({
+    type = "shapeless",
+    output = "goo:goo 9",
+    recipe = {
+       "goo:block",
     }
 })
